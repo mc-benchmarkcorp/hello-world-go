@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://gitlab.com/kwdevops/gcp-environment.git']
+  args: ['clone', 'https://github.com/mc-benchmarkcorp/hello-world-go.git']
   env: ['PROJECT_ROOT=go-app']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/hello-world', '.']
