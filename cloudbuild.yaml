@@ -3,7 +3,7 @@ steps:
   args: ['clone', 'https://github.com/mc-benchmarkcorp/hello-world-go.git']
   env: ['PROJECT_ROOT=go-app']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/hello-world', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/hello-world', './go-app']
 
 # my-image is pushed to Container Registry
 images:
