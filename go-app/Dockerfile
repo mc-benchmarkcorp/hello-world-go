@@ -1,5 +1,7 @@
 FROM golang:latest
 
+RUN apt-get update && apt-get upgrade -y
+
 RUN mkdir /app
 
 WORKDIR /app
