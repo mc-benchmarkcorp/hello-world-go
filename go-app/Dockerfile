@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.14beta1-buster
 
 RUN apt-get update && apt-get upgrade -y
 
